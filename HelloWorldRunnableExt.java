@@ -4,12 +4,13 @@ import lombok.RequiredArgsConstructor;
 import ru.flendger.dynamic.dynamicrunner.web.DynamicRunController;
 
 @RequiredArgsConstructor
-public class HelloWorldRunnable implements Runnable {
+public class HelloWorldRunnableExt implements Runnable {
     private final DynamicRunController controller;
 
     @Override
     public void run() {
-        System.out.println("Hello, World!!! 26563465465");
+        System.out.println("Hello, World!!! ");
         System.out.println(controller.getClass());
+        System.out.println(getClass());
     }
 }
